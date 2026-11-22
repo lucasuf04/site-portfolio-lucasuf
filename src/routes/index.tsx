@@ -35,6 +35,7 @@ import projectSneaker from "@/assets/project-sneaker.jpg";
 import projectLens from "@/assets/project-lens.jpg";
 import projectChrisThumb1 from "@/assets/project-chris-thumb1.jpg";
 import projectChrisThumb2 from "@/assets/project-chris-thumb2.jpg";
+import projectAgenciaThumb from "@/assets/project-agencia-thumb.jpg";
 import projectMercadoPago from "@/assets/project-mercadopago.jpg";
 import projectDiscord from "@/assets/project-discord.jpg";
 import mercadopagoThumbH from "@/assets/mercadopago-thumb-h.jpg";
@@ -320,6 +321,33 @@ export const YOUTUBE_EXAMPLES: VideoVariant[] = [
   },
 ];
 
+export const ESCALA_EXAMPLES: VideoVariant[] = [
+  {
+    id: "agencia-01",
+    shortLabel: "Agência",
+    title: "Agência — Edição Ágil & Retenção para Redes",
+    subtitle: "Conteúdo em Escala • Reels & TikTok",
+    description:
+      "Edição vertical em escala para criadores e agências com alto volume de publicações. Cortes precisos no ritmo da fala, tipografia dinâmica com ênfase visual, sound design pontual e padronização para manter retenção e consistência.",
+    verticalVideo: "/videos/agencia-conteudo-escala.mp4",
+    verticalThumb: projectAgenciaThumb,
+    tools: ["Premiere Pro", "After Effects"],
+    metric: "Alta Retenção & Ritmo Ágil",
+  },
+  {
+    id: "chris-escala",
+    shortLabel: "Chris Escala",
+    title: "Chris — Volume & Consistência em Escala",
+    subtitle: "Vídeos Diários • Frequência & Retenção",
+    description:
+      "Edição ágil no Premiere Pro voltada para volume e consistência. Cortes limpos, legendas dinâmicas sincronizadas e fluxo de trabalho acelerado mantendo frequência diária sem perder a qualidade visual.",
+    verticalVideo: "/videos/chris-conteudo-escala.mp4",
+    verticalThumb: projectChrisThumb1,
+    tools: ["Premiere Pro"],
+    metric: "Fluxo Contínuo & Agilidade",
+  },
+];
+
 export interface ProjectItem {
   id: string;
   kind: string;
@@ -402,10 +430,11 @@ const PROJECTS: ProjectItem[] = [
     aspect: "vertical",
     description:
       "Edição de vídeos mais simples e objetivos para marcas e criadores que precisam de um grande volume de publicações. Processos ágeis no Premiere Pro, cortes precisos, legendas dinâmicas e padronização visual para manter a frequência de postagens.",
-    tools: ["Premiere Pro"],
-    metric: "Alta Retenção & Consistência",
-    images: [projectChrisThumb1],
-    videoUrl: "/videos/chris-conteudo-escala.mp4",
+    tools: ["Premiere Pro", "After Effects"],
+    metric: "2 Exemplos em Escala Diária",
+    images: [projectAgenciaThumb],
+    videoUrl: "/videos/agencia-conteudo-escala.mp4",
+    carouselItems: ESCALA_EXAMPLES,
   },
 ];
 
@@ -466,6 +495,7 @@ const SHOWCASE_ROWS: ShowcaseRef[][] = [
     { projectId: "edicao-redes-sociais", variantId: "dra-juliana", aspect: "vertical", tag: "02 • Redes Sociais" },
     { projectId: "edicao-redes-sociais", variantId: "buffet-munger", aspect: "vertical", tag: "02 • Redes Sociais" },
     { projectId: "edicao-redes-sociais", variantId: "chris-74", aspect: "vertical", tag: "02 • Redes Sociais" },
+    { projectId: "edicao-conteudo-escala", variantId: "agencia-01", aspect: "vertical", tag: "05 • Conteúdo em Escala" },
   ],
   [
     { projectId: "demo-apps-saas", variantId: "googledrive", aspect: "horizontal", tag: "01 • Apps & SaaS" },
@@ -476,7 +506,7 @@ const SHOWCASE_ROWS: ShowcaseRef[][] = [
     { projectId: "motion-design-profissional", imageSrc: motionDemoShadow, tag: "03 • Motion Design" },
     { projectId: "edicao-youtube-podcasts", variantId: "kaizen-vsl", aspect: "horizontal", tag: "04 • YouTube & Podcasts" },
     { projectId: "edicao-redes-sociais", variantId: "cardas-01", aspect: "vertical", tag: "02 • Redes Sociais" },
-    { projectId: "edicao-conteudo-escala", tag: "05 • Edições básicas para redes" },
+    { projectId: "edicao-conteudo-escala", variantId: "chris-escala", aspect: "vertical", tag: "05 • Edições básicas para redes" },
   ],
 ];
 
