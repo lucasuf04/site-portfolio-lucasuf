@@ -151,6 +151,18 @@ export interface VideoVariant {
 
 export const SAAS_EXAMPLES: VideoVariant[] = [
   {
+    id: "organizze",
+    shortLabel: "Organizze",
+    title: "Organizze — Gestão Financeira & UI Motion",
+    subtitle: "Fintech & SaaS Walkthrough",
+    description:
+      "Demonstração comercial em 16:9 apresentando a plataforma Organizze. Animação de telas do painel financeiro em perspectiva 3D, conexão bancária, gráficos dinâmicos, tipografia sincronizada e sound design fluido.",
+    horizontalVideo: "/videos/organizze-horizontal.mp4",
+    horizontalThumb: organizzeThumbH,
+    tools: ["After Effects", "Premiere Pro"],
+    metric: "UI Motion 3D & Storytelling",
+  },
+  {
     id: "mercadopago",
     shortLabel: "Mercado Pago",
     title: "Mercado Pago — Rendimento & Experiência Mobile",
@@ -205,18 +217,6 @@ export const SAAS_EXAMPLES: VideoVariant[] = [
     verticalThumb: googledriveThumbV,
     tools: ["Premiere Pro", "Remotion"],
     metric: "Tutorial Dinâmico & UI Explainer",
-  },
-  {
-    id: "organizze",
-    shortLabel: "Organizze",
-    title: "Organizze — Gestão Financeira & UI Motion",
-    subtitle: "Fintech & SaaS Walkthrough",
-    description:
-      "Demonstração comercial em 16:9 apresentando a plataforma Organizze. Animação de telas do painel financeiro em perspectiva 3D, conexão bancária, gráficos dinâmicos, tipografia sincronizada e sound design fluido.",
-    horizontalVideo: "/videos/organizze-horizontal.mp4",
-    horizontalThumb: organizzeThumbH,
-    tools: ["After Effects", "Premiere Pro"],
-    metric: "UI Motion 3D & Storytelling",
   },
 ];
 
@@ -390,8 +390,8 @@ const PROJECTS: ProjectItem[] = [
       "Vídeos modernos focados em demonstrar produtos digitais, aplicativos e plataformas SaaS com máxima clareza. Motion graphics de interface (UI/UX), animação de telas, transições fluidas e destaques visuais de funcionalidades voltados para onboarding e conversão.",
     tools: ["Premiere Pro", "Remotion"],
     metric: "5 Exemplos de Apps & SaaS",
-    images: [mercadopagoThumbH],
-    videoUrl: "/videos/mercadopago-horizontal.mp4",
+    images: [organizzeThumbH],
+    videoUrl: "/videos/organizze-horizontal.mp4",
     carouselItems: SAAS_EXAMPLES,
   },
   {
