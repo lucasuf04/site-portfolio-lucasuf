@@ -46,6 +46,7 @@ import discordThumbH from "@/assets/discord-thumb-h.jpg";
 import discordThumbV from "@/assets/discord-thumb-v.jpg";
 import googledriveThumbH from "@/assets/googledrive-thumb-h.jpg";
 import googledriveThumbV from "@/assets/googledrive-thumb-v.jpg";
+import organizzeThumbH from "@/assets/organizze-thumb-h.jpg";
 import socialDraJuliana from "@/assets/social-dra-juliana.jpg";
 import socialBuffetMunger from "@/assets/social-buffet-munger.jpg";
 import socialChris74 from "@/assets/social-chris-74.jpg";
@@ -204,6 +205,18 @@ export const SAAS_EXAMPLES: VideoVariant[] = [
     verticalThumb: googledriveThumbV,
     tools: ["Premiere Pro", "Remotion"],
     metric: "Tutorial Dinâmico & UI Explainer",
+  },
+  {
+    id: "organizze",
+    shortLabel: "Organizze",
+    title: "Organizze — Gestão Financeira & UI Motion",
+    subtitle: "Fintech & SaaS Walkthrough",
+    description:
+      "Demonstração comercial em 16:9 apresentando a plataforma Organizze. Animação de telas do painel financeiro em perspectiva 3D, conexão bancária, gráficos dinâmicos, tipografia sincronizada e sound design fluido.",
+    horizontalVideo: "/videos/organizze-horizontal.mp4",
+    horizontalThumb: organizzeThumbH,
+    tools: ["After Effects", "Premiere Pro"],
+    metric: "UI Motion 3D & Storytelling",
   },
 ];
 
@@ -376,7 +389,7 @@ const PROJECTS: ProjectItem[] = [
     description:
       "Vídeos modernos focados em demonstrar produtos digitais, aplicativos e plataformas SaaS com máxima clareza. Motion graphics de interface (UI/UX), animação de telas, transições fluidas e destaques visuais de funcionalidades voltados para onboarding e conversão.",
     tools: ["Premiere Pro", "Remotion"],
-    metric: "4 Exemplos em 2 Formatos (16:9 e 9:16)",
+    metric: "5 Exemplos de Apps & SaaS",
     images: [mercadopagoThumbH],
     videoUrl: "/videos/mercadopago-horizontal.mp4",
     carouselItems: SAAS_EXAMPLES,
@@ -502,6 +515,7 @@ const SHOWCASE_ROWS: ShowcaseRef[][] = [
     { projectId: "motion-design-profissional", imageSrc: motionDemoUi, tag: "03 • Motion Design" },
     { projectId: "demo-apps-saas", variantId: "xp", aspect: "horizontal", tag: "01 • Apps & SaaS" },
     { projectId: "edicao-redes-sociais", variantId: "ravensbury", aspect: "vertical", tag: "02 • Redes Sociais" },
+    { projectId: "demo-apps-saas", variantId: "organizze", aspect: "horizontal", tag: "01 • Apps & SaaS" },
     { projectId: "edicao-youtube-podcasts", variantId: "vsl-itte", aspect: "horizontal", tag: "04 • YouTube & Podcasts" },
     { projectId: "motion-design-profissional", imageSrc: motionDemoShadow, tag: "03 • Motion Design" },
     { projectId: "edicao-youtube-podcasts", variantId: "kaizen-vsl", aspect: "horizontal", tag: "04 • YouTube & Podcasts" },
